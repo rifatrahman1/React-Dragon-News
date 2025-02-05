@@ -1,0 +1,43 @@
+[
+    {
+        "id": "0",
+        "name": "All News",
+        "category": "all-news"
+    },
+    {
+        "id": "1",
+        "name": "Breaking News",
+        "category": "breaking-news"
+    },
+    {
+        "id": "2",
+        "name": "Regular News",
+        "category": "regular-news"
+    },
+    {
+        "id": "3",
+        "name": "International News",
+        "category": "international-news"
+    },
+    {
+        "id": "4",
+        "name": "Sports",
+        "category": "sports"
+
+    },
+    {
+        "id": "5",
+        "name": "Entertainment",
+        "category": "entertainment"
+    },
+    {
+        "id": "6",
+        "name": "Culture",
+        "category": "culture"
+    },
+    {
+        "id": "7",
+        "name": "Arts",
+        "category": "arts"
+    }
+]
