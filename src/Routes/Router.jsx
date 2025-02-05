@@ -1,7 +1,7 @@
 
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import Layout from '../Layout/Layout';
-import Home from '../Layout/Home';
+import Category_news from '../Components/Category_news';
 
 const Router = createBrowserRouter([
     {
@@ -10,8 +10,13 @@ const Router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home></Home>
-            }
+                element: <Navigate to={'/category/0'}></Navigate>
+            },
+            {
+                path: '/category/:id',
+                element: <Category_news></Category_news>,
+                loader: () => fetch('../news.json')
+            },
         ]
     }
 ])

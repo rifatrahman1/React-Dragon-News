@@ -2,7 +2,9 @@ import React from 'react';
 import Header from './Header';
 import Latesnews from '../Components/Latesnews';
 import Navbar from '../Components/Navbar';
-import Aside_left from '../Components/Aside_left';
+import Aside_right from '../Components/Aside_right';
+import Categories from '../Components/Categories';
+import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
     return (
@@ -16,12 +18,16 @@ const Layout = () => {
             <nav>
                 <Navbar></Navbar>
             </nav>
-            <main className='grid grid-cols-12 gap-4 mt-20'>
+            <main className='grid grid-cols-12 gap-7 mt-20'>
                 <aside className='col-span-3'>
-                    <Aside_left></Aside_left>
+                    <Categories></Categories>
                 </aside>
-                <main className='col-span-6'>middle content layout</main>
-                <aside className='col-span-3'>right aside layout</aside>
+                <main className='col-span-6'>
+                    <Outlet></Outlet>
+                </main>
+                <aside className='col-span-3'>
+                    <Aside_right></Aside_right>
+                </aside>
             </main>
         </div>
     );
