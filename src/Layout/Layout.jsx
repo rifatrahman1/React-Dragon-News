@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import Header from '../Components/Header';
 import Latesnews from '../Components/Latesnews';
 import Navbar from '../Components/Navbar';
 import Aside_right from '../Components/Aside_right';

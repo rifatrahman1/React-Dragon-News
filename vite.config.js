@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
-import daisyui from 'daisyui' // ✅ Proper import
+import daisyui from 'daisyui'
 
 export default defineConfig({
-  plugins: [react(), tailwindcss(),  require('daisyui')], // ✅ Fix here
+  plugins: [react(), tailwindcss(),  require('daisyui')],
 })
