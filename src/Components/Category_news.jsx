@@ -6,8 +6,6 @@ const Category_news = () => {
     const [categories, set_categories] = useState([]);
     const category_news = useLoaderData();
     const { id } = useParams();
-    
-    console.log('Current category:', id);
 
     useEffect(() => {
         if (!id || id === '0') {
@@ -23,7 +21,7 @@ const Category_news = () => {
             <h2>Dragon News Home - {id}</h2>
             <div className='space-y-8'>
             {
-                categories.map((card) => <Card key={card.id} card={card}></Card>)
+                categories.map((card) => <Card key={card._id} card={card}></Card>)
             }
             </div>
         </div>

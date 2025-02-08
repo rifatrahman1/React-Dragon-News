@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaRegBookmark, FaRegShareSquare, FaStar, FaEye } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const NewsCard = ({ card }) => {
-    console.log('object', card);
-    const { title, author, published_date, thumbnail_url, details, total_view, rating, image_url } = card;
+    const { title,_id, author, published_date, thumbnail_url, details, total_view, rating, image_url } = card;
     
     return (
         <div className="bg-white shadow-md rounded-xl p-4 space-y-3">
@@ -29,7 +29,7 @@ const NewsCard = ({ card }) => {
             
             <p className="text-gray-600 font-semibold">
                 {details.length > 200 ? details.slice(0, 200) + '...' : details}
-                <span className="text-red-500 cursor-pointer"> Read More</span>
+                <Link to={`/news_details/${_id}`} className="text-red-500 cursor-pointer"> Read More</Link>
             </p>
 
             <div className="flex justify-between items-center pt-2 border-t">
