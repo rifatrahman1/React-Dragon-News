@@ -26,6 +26,7 @@ const Register = () => {
         .then((result) => {
             const user = result.user
             set_user(user)
+            
         })
         .catch((error) => {
             console.log('ERROR', error);

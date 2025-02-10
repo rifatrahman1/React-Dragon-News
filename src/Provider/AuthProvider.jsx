@@ -29,6 +29,9 @@ const AuthProvider = ({children}) => {
         return signInWithEmailAndPassword(auth, email, password)
         set_loading(true)
     }
+    const user_update_profile = (update_data) => {
+        
+    }
     const auth_info = {
         user,
         set_user,
