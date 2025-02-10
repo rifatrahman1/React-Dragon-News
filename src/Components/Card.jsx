@@ -3,7 +3,7 @@ import { FaRegBookmark, FaRegShareSquare, FaStar, FaEye } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const NewsCard = ({ card }) => {
-    const { title,_id, author, published_date, thumbnail_url, details, total_view, rating, image_url } = card;
+    const { title,_id, author, details, total_view, rating, image_url } = card;
     
     return (
         <div className="bg-white shadow-md rounded-xl p-4 space-y-3">
